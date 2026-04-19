@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Cotizador</title>
+    <link rel="icon" type="image/png" href="bitcoin.png">
 </head>
 <body>
     <video class="bg-video" src="BG-crypto.mp4" autoplay muted loop></video>
@@ -32,17 +32,40 @@
                     </select>
                 </div>
                 <div class="coin-input-container">
-                    <label for="amount">Ingresa el monto a cotizar</label>
-                    <input type="number" class="coin-input" id="amount" placeholder="Monto a cotizar">
+                    <label for="amount-input">Ingresa el monto a cotizar</label>
+                    <input type="number" class="coin-input" id="amount-input" placeholder="Monto a cotizar">
                 </div>
                 <button id="form-btn" type="submit">Cotizar</button>
             </form>
-            <div id="coin-info">
-                <p class="info">El valor es: <span class="price">0</span></p>
-                <p class="info">El valor mas bajo es: <span class="price">0</span></p>
-                <p class="info">El valor mas alto es: <span class="price">0</span></p>
-                <p class="info">Variacion 24H: <span class="price">0%</span></p>
-                <p class="info">Puede comprar: <span class="price">0</span></p>
+        
+            <div id="resultado-container">
+                <div class="principal-price">
+                    <span>Puedes comprar</span>
+                    <h2 id="amount">$0.00</h2>
+                </div>
+
+                <div class="details-grid">
+                    <div class="dato-card">
+                        <span>Precio actual</span>
+                        <p id="price">--</p>
+                    </div>
+
+                    <div class="dato-card">
+                        <span>Variación 24h</span>
+                        <p id="change-24h">--</p>
+                    </div>
+
+                    <div class="dato-card">
+                        <span>Precio mínimo 24h</span>
+                        <p id="low-price">--</p>
+                    </div>
+
+                    <div class="dato-card">
+                        <span>Precio máximo 24h</span>
+                        <p id="high-price">--</p>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
