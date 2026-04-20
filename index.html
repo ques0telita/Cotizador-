@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Cotizador</title>
     <link rel="icon" type="image/png" href="bitcoin.png">
 </head>
 <body>
-    <video class="bg-video" src="BG-crypto.mp4" autoplay muted loop></video>
-    <div id="container">
+    <video class="bg-video" autoplay muted loop playsinline src="BG-crypto.mp4"></video>
+    <button id="btn-fondo" class="btn-dark">Modo Oscuro</button>
+    <div id="container"> 
         <div id="coin-container">
             <form id="coin-form">
                 <div class="coin-input-container">
@@ -33,7 +35,7 @@
                 </div>
                 <div class="coin-input-container">
                     <label for="amount-input">Ingresa el monto a cotizar</label>
-                    <input type="number" class="coin-input" id="amount-input" placeholder="Monto a cotizar">
+                    <input type="number" class="coin-input" id="amount-input" placeholder="Ej: 1000" min="0" step="any">
                 </div>
                 <button id="form-btn" type="submit">Cotizar</button>
             </form>
@@ -69,7 +71,9 @@
             </div>
         </div>
     </div>
-
+    <a class="github" href="https://github.com/ques0telita" target="_blank" >
+        <img src="GitHub_Invertocat_Black.png" alt="GitHub">
+    </a>
     <script src="index.js"></script>
 </body>
 </html>

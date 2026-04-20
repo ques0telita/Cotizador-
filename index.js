@@ -32,7 +32,6 @@ form.addEventListener('submit', async e => {
             ? 0
             : (amountNumber / rawPrice).toFixed(6);
 
-        
         priceElement.textContent = displayPrice;
         lowPriceElement.textContent = low24Hour;
         highPriceElement.textContent = high24Hour;
@@ -45,6 +44,22 @@ form.addEventListener('submit', async e => {
 
     } catch (error) /*agarra todos los errores que puedan ocurrir en el bloque try */{
         console.log(error);
+    }
+});
+
+// parte del boton oscuro/claro
+const btnFondo = document.querySelector('#btn-fondo');
+const coinContainer = document.querySelector('#coin-container');
+
+btnFondo.addEventListener('click', () => {
+    // el toggle hace esto: si la clase no esta, la pone, si ya esta, la quita.
+    coinContainer.classList.toggle('modo-oscuro');
+    
+    // aki se cambia el texto del botón 
+    if (coinContainer.classList.contains('modo-oscuro')) {
+        btnFondo.textContent = 'Modo Claro';
+    } else {
+        btnFondo.textContent = 'Modo Oscuro';
     }
 });
 

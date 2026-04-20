@@ -1,0 +1,20 @@
+# Cotizador de Criptomonedas
+
+Es una aplicación funcional que permite a los usuarios calcular el valor de distintas criptomonedas en tiempo real, utilizando monedas locales como el Bolívar (VES), Dólar (USD) y más.
+
+## Características
+- **Consumo de API:** Obtiene datos en tiempo real a través de [CryptoCompare](https://min-api.cryptocompare.com/).
+- **Cálculo Dinámico:** Permite ingresar un monto y calcular cuántas unidades de una criptomoneda podrías comprar.
+- **Diseño Responsivo:** Interfaz adaptable para dispositivos móviles y computadoras.
+- **Interfaz Moderna:** Uso de efectos de transparencia (Glassmorphism) y fondos dinámicos.
+
+## Tecnologías Utilizadas
+- **HTML5:** Estructura semántica del sitio.
+- **CSS3:** Estilos personalizados y **Media Queries** para la adaptabilidad.
+- **JavaScript (Vanilla):** Lógica de programación, manipulación del DOM, y consumo de APIs mediante `fetch`.
+
+## Captura de Pantalla
+![Vista del Proyecto](/vista-previa-cotizador.png) 
+
+## Hecho por: Sebastian Castro 
+
